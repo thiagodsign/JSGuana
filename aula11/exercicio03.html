@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Sistemas de multas</h1>
+  Velocidade do carro:
+  <input type="number" name="velocidade" id="velocidade">Km/h
+  <button type="button" value="verificar" onclick="calcular()">
+    Verificar velocidade
+  </button>
+  <div id="resultado"></div>
+
+  <h1>Em qual País você mora?</h1>
+  <input type="text" name="pais" id="pais">
+  <button type="button" onclick="revelarOPais()">Responder</button>
+  <p id="respostaDoPais"></p>
+
+
+  <script>
+    function calcular() {
+      var velocidadeDoCarro = document.querySelector('#velocidade').value
+      var resultado = document.getElementById('resultado')
+
+      if (velocidadeDoCarro == 0) {
+        return resultado.innerHTML = ''
+      }
+
+      resultado.innerHTML = `A velocidade do seu carro foi de ${velocidadeDoCarro}Km/h.`
+      resultado.innerHTML += ` Faça disso uma lição, garota. `
+      if (velocidadeDoCarro > 80) {
+        resultado.innerHTML += ` Você vai presa agora mesmo... infratora!`
+      } else resultado.innerHTML += `Siga sua viagem!`
+    }
+
+    function revelarOPais() {
+      var pais = document.querySelector('#pais').value
+      var resposta = document.getElementById('respostaDoPais')
+
+      resposta.innerHTML = `Você mora no ${pais}. Então você é `
+
+      if (pais != 'Brasil') {
+        resposta.innerHTML += 'Estrangeiro'
+      } else resposta.innerHTML += 'Brasileiro'
+
+    }
+  </script>
+
+</body>
+
+</html>
+<!-- 
+console.log(`Você é do ${pais},`)
+if (pais == 'Brasil') {
+  console.log(`então é Brasileiro.`)
+} else console.log(`então é Estrangeiro.`) -->
