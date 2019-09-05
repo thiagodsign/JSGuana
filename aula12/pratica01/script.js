@@ -1,4 +1,4 @@
-var horaAtual = 22
+var horaAtual = new Date().getHours()
 var madrugada = horaAtual <= 6
 var manha = horaAtual <= 12 && horaAtual > 6
 var tarde = horaAtual <= 19 && horaAtual > 12

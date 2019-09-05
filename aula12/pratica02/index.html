@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pratica 2</title>
+</head>
+
+<body style="display: flex; height: 100vh">
+
+  <div style="display: inline-flex; flex-direction: column; margin: auto;">
+    <label for="ano">Ano de nascimento</label>
+    <input type="number" name="ano" placeholder="Digite o ano" id="ano">
+
+    <label for="sexo">Sexo</label>
+    <div>
+      <input type="radio" name="sexo" id="mas"> Masculino
+    </div>
+
+    <div>
+      <input type="radio" name="sexo" id="fem"> Feminino
+    </div>
+
+    <button onclick="verificarPessoa()" type="button">Verificar</button>
+
+    <p id="resposta"></p>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
