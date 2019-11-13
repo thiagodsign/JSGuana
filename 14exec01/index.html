@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d33f5ff16b.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aula 14</title>
+  <link rel="stylesheet" href="http://ui.digix.com.br/ativos/css/documentacao.css">
+</head>
+
+<body class="pagina">
+
+
+  <div class="container container_pequeno container_com-fundo container_com-margem">
+    <h1 class="titulo titulo_medio u-margem-inferior-media">Vamos Praticar!</h1>
+
+    <form class="formulario">
+      <div class="grade">
+        <div class="grade__linha">
+          <div class="grade__coluna">
+            <input type="number" id="valorInicio" placeholder="Insira o valor do início da contagem">
+            <p role="tooltip" class="formulario__mensagem">
+              <i class="far fa-times formulario__mensagem-icone"></i>
+              <span class="u-esconder-acessivel">Erro: </span>
+              Este campo é obrigatório
+            </p>
+          </div>
+        </div>
+
+        <div class="grade__linha">
+          <div class="grade__coluna">
+            <input type="number" id="valorFinal" placeholder="Insira o valor do fim da contagem">
+            <p role="tooltip" class="formulario__mensagem">
+              <i class="far fa-times formulario__mensagem-icone"></i>
+              <span class="u-esconder-acessivel">Erro: </span>
+              Este campo é obrigatório
+            </p>
+          </div>
+        </div>
+
+        <div class="grade__linha">
+          <div class="grade__coluna">
+            <input type="number" id="valorDasCasas" placeholder="Quer que conte de quantos em quantos?">
+            <p role="tooltip" class="formulario__mensagem">
+              <i class="far fa-times formulario__mensagem-icone"></i>
+              <span class="u-esconder-acessivel">Erro: </span>
+              Este campo é obrigatório
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <button class="botao botao_sem-preenchimento botao_largura-total u-margem-inferior-media" onclick="resultado()"
+      type="button">
+      Resultado
+    </button>
+
+    <div style="display: flex; flex-wrap: wrap;" id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
